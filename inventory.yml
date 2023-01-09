@@ -1,0 +1,92 @@
+---
+all:
+    hosts:
+    children:
+        site_name_1:
+            unit_name_1:
+                switches:
+                    outer_switches: 
+                        AAAA-u00-os-01a: 
+                            ansible_host: 172.16.0.128
+                        AAAA-u00-os-01b:
+                            ansible_host: 172.16.0.129
+                        AAAA-u00-os-02a: 
+                            ansible_host: 172.16.0.130
+                        AAAA-u00-os-02b:
+                            ansible_host: 172.16.0.131
+                    inner_switches:
+                servers:
+                routers:
+        site_name_2:
+            unit_name_2:
+                switches:
+                    outer_switches:
+                        BBBB-u00-os-01a: 
+                            ansible_host: 172.16.24.128
+                        BBBB-u00-os-01b: 
+                            ansible_host: 172.16.24.129
+                        BBBB-u00-os-02a: 
+                            ansible_host: 172.16.24.130
+                        BBBB-u00-os-02b: 
+                            ansible_host: 172.16.24.131
+                    inner_switches:
+                servers:
+                routers:
+            unit_name_3:
+                switches:
+                    outer_switches:
+                        BBBB-u00-os-01a: 
+                            ansible_host: 172.16.32.128
+                        BBBB-u00-os-01b: 
+                            ansible_host: 172.16.32.129
+                        BBBB-u00-os-02a: 
+                            ansible_host: 172.16.32.130
+                        BBBB-u00-os-02b: 
+                            ansible_host: 172.16.32.131
+                    inner_switches:
+                servers:
+                routers:
+            unit_name_4:
+                switches:
+                    outer_switches:
+                        BBBB-u00-os-01a: 
+                            ansible_host: 172.16.16.128
+                        BBBB-u00-os-01b: 
+                            ansible_host: 172.16.16.129
+                        BBBB-u00-os-02a: 
+                            ansible_host: 172.16.16.130
+                        BBBB-u00-os-02b: 
+                            ansible_host: 172.16.16.131
+                    inner_switches:
+                servers:
+                routers:
+        site_name3:
+            unit_name_5:
+                switches:
+                    outer_switches:
+                        CCCC-u00-os-01a: 
+                            ansible_host: 172.16.24.128
+                        CCCC-u00-os-01b: 
+                            ansible_host: 172.16.24.129
+                        CCCC-u00-os-02a: 
+                            ansible_host: 172.16.24.130
+                        CCCC-u00-os-02b: 
+                            ansible_host: 172.16.24.131
+                    inner_switches:
+                servers:
+                routers:
+            unit_name_6:
+                switches:
+                    outer_switches:
+                        CCCC-u00-os-01a: 
+                            ansible_host: 172.16.32.128
+                        CCCC-u00-os-01b: 
+                            ansible_host: 172.16.32.129
+                        CCCC-u00-os-02a: 
+                            ansible_host: 172.16.32.130
+                        CCCC-u00-os-02b: 
+                            ansible_host: 172.16.32.131
+                    inner_switches:
+                servers:
+                routers:
+...
